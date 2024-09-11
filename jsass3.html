@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <style>
+            @@media (max-width:700px ) {
+                #oga{
+                    flex-direction: column;
+                }
+            }
+
+            #answer{
+                margin: 20px;
+            }
+            #hi{
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                margin-left: -10px;
+            }
+            .button{
+                padding: 10px;
+                color: black;
+                font-weight:bold;
+                margin: 1px 10px;
+                background-color: yellow;
+                box-shadow: ;
+                border-radius: 10px;
+                width: 40px;
+                border: none;
+                video
+            }
+
+            .button:hover{
+                color: white;
+                background-color: brown;
+                transition: background 0.3 ease-in-out;
+            }
+
+            body{
+                background-color: white;
+                font-weight: bolder;
+                font-family: verdana;
+                font-size: 20px;
+            }
+            #cal{
+                border: 3px solid black;
+                border-radius: 20px;
+                width: 350px;
+                height: 200px;
+                padding:10px;
+            }
+
+            input{
+                padding: 5px;
+                border: 3px solid black;
+                margin: 5px;
+                border-radius: 9px;
+                margin: 10px;
+                width: 100px;
+            }
+            #plus{
+                margin-left: 50px;
+            }
+            span{
+                font-size: 50px;
+            }
+            body, h1, h2, p {
+              margin: 0;
+              padding: 0;
+            }
+
+            body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+            }
+
+            .navbar {
+              background: #333;
+              color: #fff;
+              padding: 10px 0;
+            }
+
+            .container {
+              width: 80%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            .logo {
+              font-size: 1.8rem;
+              font-weight: bold;
+            }
+
+            .nav-links {
+              list-style: none;
+              display: flex;
+            }
+
+            .nav-links li {
+              margin-left: 20px;
+            }
+
+            .nav-link {
+              color: #fff;
+              text-decoration: none;
+              padding: 5px 10px;
+              transition: background 0.3s ease;
+            }
+
+            .nav-link:hover {
+              background: #575757;
+              border-radius: 4px;
+            }
+            #oga{
+                display: flex;
+                gap: 50px;
+            }
+            #loan_calculator{
+                border: 3px solid black;
+                border-radius: 15px;
+                width: fit-content;
+            }
+            #loan{
+                width: 70px;
+                display: flex;
+                position: relative;
+                left: 170px;
+                top: 30px;
+            }
+            .nav-link{
+              color: black;
+
+            }
+            #oga{
+                display: flex;
+                flex-direction: column;
+            }
+
+            div{
+                width: fit-content;
+                height: fit-content;
+                padding: 20px;
+            }
+
+            #cal{
+                display: flex;
+                flex-direction: column;
+                height: 300px;
+            }
+        </style>
+    </head>
+    
+    <body>
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+           <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <a class="navbar-brand" href="#">Assignment</a>
+             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                   <a class="nav-link" href="index.html">Day 1</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="day2.html">Day 2</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="object.html">Day 3</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="lo_and_co.html">Day 4</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="class 2.html">Day 5</a>
+                 </li>
+                 
+                 <li class="nav-item">
+                   <a class="nav-link" href="jsass3.html">Day 6</a>
+                 </li>
+
+                 <li class="nav-item">
+                   <a class="nav-link" href="game.html">Day 7</a>
+                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="loopass.html">Day 8</a>
+                </li>
+
+
+               </ul>
+             </div>
+           </div>
+         </nav>
+       <main>
+        <div id="oga" class="container-md">
+            <div id="cal">
+                <div id="inputs">
+                    <input type="text" id="first">  
+                    <span id="myspan"></span>
+                    <input type="text" id="second">
+                </div>  
+                <div id="hi">
+                    <button id="plus" onclick="pluss()" class="button">+</button>
+                    <button id="minus" onclick="minuss()" class="button">-</button>
+                    <button id="divide" onclick="divides()" class="button">/</button>
+                    <button id="multi" onclick="multiplies()" class="button">*</button>
+                                                            <br>
+                </div>     
+                    <h3 id="result"> </h3>
+            </div>                                        
+                
+            <div id="loan_calculator">
+              <div id="input">
+                <label for="Amount">Amount</label>
+                <input type="text" id="Amount">
+                <label for="time">Time</label>
+                <input type="text" id="time"> <br>
+                <button id="loan" onclick="loan()" class="button">Loan</button>
+              </div>
+           
+              <h3 id="answer" onclick="loan()"></h3>
+            </div> 
+
+            <div id="loan_calculator">
+              <div id="input">
+                <label for="invest">Investment Amount</label>
+                <input type="text" id="Amount_Invested"> <br>
+                <label for="time">Time</label>
+                <input type="text" id="timei"> <br>
+                <button id="loan" onclick="invest()" class="button">Invest</button>
+              </div>
+           
+              <h3 id="sooooo"></h3>
+            </div> 
+        </div> 
+
+     <script src="jsass3.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
